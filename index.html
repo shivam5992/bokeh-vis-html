@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bokeh Dashboard : Google Acquisitions</title>
+    <title>Google Acquisitions</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -39,7 +39,6 @@
 .carousel-control
 {
     width: 2%;
- 
 }
 
    </style> 
@@ -53,11 +52,11 @@
     <header>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-7">
+                <div class="col-sm-7 col-sm-offset-2">
                     <div class="header-content">
                         <div class="header-content-inner">
-                            <h1>New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
-                            <a href="#myCarousel" class="btn btn-outline btn-xl page-scroll">Start Now for Free!</a>
+                            <h1>A Visualization, of companies acquired by Google since the year 2000, powered by python's library : bokeh</h1>
+                            <a href="#vis_sec" class="btn btn-outline btn-xl page-scroll">Start Explorting!</a>
                         </div>
                     </div>
                 </div>
@@ -72,7 +71,7 @@
 
 
     <div class="container">
-    <div id="myCarousel" class="carousel slide">
+    <div id="vis_sec" class="carousel slide">
       
         <div class="carousel-inner">
 
@@ -80,13 +79,12 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     
-                    <br><br><br>
-                    <h2 class="section-heading">A look at all the Google's Acquisitions</h2>
-                    <p>Our app is available on any mobile device! Download now to get started!
-                    Our app is available on any mobile device! Download now to get started!
-                    Our app is available on any mobile device! Download now to get started! !
-                    Our app is available on any mobile device! Download now to get started! !
-                    Our app is available on any mobile device! Download now to get</p>
+                    <br><br>
+                    <br>
+                    <h2 class="section-heading">Glimpse of all Google's Acquisitions</h2>
+                    <br><br>
+                    <p>Since its inception in 1998, Google has acquired over 200 companies across different 
+                    verticals. Deja, was the first company that Google acquired in December 2001 for an undisclosed amount. Kaggle, is the most recent procurement in Googl's Portfolio. (This graph was generated in April, 2017). The blocks shown below are generated in python-bokeh and they repersent every Google's Acquisition with meta details.</p>
                     
                     <br>
                     <div class="bk-root">   
@@ -94,9 +92,6 @@
                     </div>
                     <br><br><br>
 
-                    <p>Our app is available on any mobile device! Download now to get started!
-                    Our app is available on any mobile device! Download now to get started!
-                    Our app is available on any mobile device! Download now to get started!</p>
 
                 </div>
             </div>
@@ -109,20 +104,15 @@
                 <div class="col-md-10 col-md-offset-1">
                     
                     <br><br><br>
-                    <h2 class="section-heading">A look at all the Google's Acquisitions</h2>
-                    <p>Our app is available on any mobile device! Download now to get started!
-                    Our app is available on any mobile device! Download now to get started!
-                    Our app is available on any mobile device! Download now to get started!</p>
+                    <h2 class="section-heading">Acquisitions by Year</h2>
+                    <br><br>
+
+                    <p>About 40% of the total acquisions were observed in 2012-2016 with total 79 acquisitions, No doubt the period was a balloning era of global startups across different sectors. Current time period, ie. 2016-Present is also observing a the high rate of acquisitions, with on an average 1 acquisition per week.</p>
                     
-                    <br><br><br>
+                    <br>
                     <div class="bk-root">   
                         <div class="bk-plotdiv" id="542e496e-7a08-4d19-8546-b936d904ab22"></div>
                     </div>
-                    <br><br><br>
-
-                    <p>Our app is available on any mobile device! Download now to get started!
-                    Our app is available on any mobile device! Download now to get started!
-                    Our app is available on any mobile device! Download now to get started!</p>
 
                 </div>
             </div>
@@ -134,20 +124,16 @@
                 <div class="col-md-10 col-md-offset-1">
                     
                     <br><br><br>
-                    <h2 class="section-heading">A look at all the Google's Acquisitions</h2>
-                    <p>Our app is available on any mobile device! Download now to get started!
-                    Our app is available on any mobile device! Download now to get started!
-                    Our app is available on any mobile device! Download now to get started!</p>
-                    
-                    <br><br><br>
-                    <div class="bk-root">   
-                    <div class="bk-plotdiv" id="1e315a9f-9e0a-4008-b71d-7944d6f2fa3a"></div>
-                    </div>
-                    <br><br><br>
+                    <h2 class="section-heading">Acquisitions by Year</h2>
+                    <br><br>
 
-                    <p>Our app is available on any mobile device! Download now to get started!
-                    Our app is available on any mobile device! Download now to get started!
-                    Our app is available on any mobile device! Download now to get started!</p>
+                    <p>Though Eric Schmid served as the longest CEO for Google (~10 years), Number of acquisitions remained less (33) as compared to the number of acquistions by his successors : Larry Page and Sundar Pichai, (90 and 82+ respectively).</p>
+                    
+                    <br>
+                    <div class="bk-root">   
+                        <div class="bk-plotdiv" id="1e315a9f-9e0a-4008-b71d-7944d6f2fa3a"></div>
+                    </div>
+                   
 
                 </div>
             </div>
@@ -333,10 +319,10 @@
 
         </div>
 
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <a class="left carousel-control" href="#vis_sec" data-slide="prev">
           <span class="icon-prev">Previous</span>
         </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <a class="right carousel-control" href="#vis_sec" data-slide="next">
           <span class="icon-next">Next</span>
         </a>
 
