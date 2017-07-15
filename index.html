@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,27 +20,31 @@
 
     <link href="css/new-age.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.5.min.css" type="text/css" />
-    
+
     <style>
-
-.carousel-inner,.carousel,.item,.container,.fill {
-  height:100%;
-  width:100%;
-  background-position:center center;
-}
-
-.carousel-control.right, .carousel-control.left
-{
-    background-image: None;
-}
-
-
-.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev{
-    margin-left: -75px;
-}
-
-
-</style> 
+        .carousel-inner,
+        .carousel,
+        .item,
+        .container,
+        .fill {
+            height: auto;
+            min-height: 100%;
+            width: 100%;
+            background-position: center center;
+        }
+        .bk-plot-layout.bk-layout-fixed, .bk-canvas, .bk-plot-wrapper, .bk-canvas-wrapper
+        {
+            width: 100% !important;
+        }
+        .carousel-control.right,
+        .carousel-control.left {
+            background-image: None;
+        }
+        .carousel-control .glyphicon-chevron-left,
+        .carousel-control .icon-prev {
+            margin-left: -75px;
+        }
+    </style>
 </head>
 
 
@@ -55,256 +58,276 @@
                     <div class="header-content">
                         <div class="header-content-inner">
                             <h1>Visualizing the journey of Google's acquisition since 2000. A visual insights storyline created using python-bokeh</h1>
-                            <a href="#vis_sec" class="btn btn-outline btn-xl page-scroll">Start Explorting!</a>
+                            <!-- <a href="javascript:void(0)" class="btn btn-outline btn-xl page-scroll">Start Explorting!</a> -->
+                            <span class="btn btn-outline btn-xl page-scroll">Start Explorting!</span>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </header>
 
+    <div class="container" id="abc">
+        <div id="vis_sec" class="carousel slide">
+            <div class="carousel-inner">
 
-    <!-- Fix Scroll -->
-
-
-
-    <div class="container">
-    <div id="vis_sec" class="carousel slide">
-        <div class="carousel-inner">
-
-          <div class="item active">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    
-                    <br><br><br>
-                    <h2 class="section-heading">Glimpse of all acquisitions by Google</h2>
-                    <br>
-
-                    <p>Since its inception in 1998, Google has acquired over 200 companies in eclectic categories. Deja News was the first acquisition by Google in Feburary 2001 which ended up as the core component of Google Groups. As of June-2017, Owlchemy Labs which is a virtual reality studio is the most recent addition in Google's Portfolio. A myriad of acquisitions were observed in 2014-2015, the company reorganized them under new entity called Alphabet Inc. </p>
-                    
-                    <br>
+                <div class="item active">
                     <div class="row">
-                        <div class="col-md-7">
-                            <div class="bk-root">   
-                                <div class="bk-plotdiv" id="65b8cb11-1a4a-47c1-9dc4-99a4764ed50e"></div>
+                        <div class="col-md-10 col-md-offset-1">
+
+                            <br>
+                            <br>
+                            <br>
+                            <h2 class="section-heading">Glimpse of all acquisitions by Google</h2>
+                            <br>
+
+                            <p>Since its inception in 1998, Google has acquired over 200 companies in eclectic categories. Deja News was the first acquisition by Google in Feburary 2001 which ended up as the core component of Google Groups. As of June-2017, Owlchemy Labs which is a virtual reality studio is the most recent addition in Google's Portfolio. A myriad of acquisitions were observed in 2014-2015, the company reorganized them under new entity called Alphabet Inc. </p>
+
+                            <br>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="bk-root" style="width: 100% !important">
+                                        <div class="bk-plotdiv" id="65b8cb11-1a4a-47c1-9dc4-99a4764ed50e" style="width: 100% !important"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <p>Google's focus on Android and Mobile is always higher. Till date, Motorola remains the most expensive purchase of google amounting to $12.5 Billion, followed by NestLabs, DoubleClick and Youtube among other dear acquisitions.</p>
+
+                                    <p>Other than Mobile, Artificial Intelligence is other most loved bucket. Google procured companies under disparate categories such as Mobile, AI, Cloud, Robotics, Maps, Communication, Search and Publication. The top and most recent acquisitions are observed in Artificial Intelligence. </p>
+
+                                    <p>Plethora of companies acquired by Google are located within United States, while Canada and Europe are the other shopping places loved by Google.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <p>Google's focus on Android and Mobile is always higher. Till date, Motorola remains the most expensive purchase of google amounting to $12.5 Billion, followed by NestLabs, DoubleClick and Youtube among other dear acquisitions.</p>
+                    </div>
+                </div>
 
-                            <p>Other than Mobile, Artificial Intelligence is other most loved bucket. Google procured companies under disparate categories such as Mobile, AI, Cloud, Robotics, Maps, Communication, Search and Publication. The top and most recent acquisitions are observed in Artificial Intelligence. </p>
 
-                            <p>Plethora of companies acquired by Google are located within United States, while Canada and Europe are the other shopping places loved by Google.</p>
+
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <br>
+                            <br>
+                            <br>
+                            <h2 class="section-heading">Acquisitions over the Years</h2>
+                            <br>
+                            <p>Google started slow during 2000-2004, but gradually increased the rate of acquisition. The burgeoning era of rise of startup ecosystem was 2012-2016, The same window also witnessed maximum google's acquisitions, about 40% of the total companies were acquired in this time period. </p>
+
+                            <br>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="bk-root">
+                                        <div class="bk-plotdiv" id="9e80f0c0-283c-40a9-92b5-68284624c98e"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <p>The rate of acquiring a company in the latest time period (2016-Present) is highly acclerating and expected to beat it precursor.</p>
+                                    <p>Since 2016, On an average rate of acquisition is 2 per month. More than 50% of the total acquisitions by Google are after 2010.</p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-            </div>
-          </div>
 
 
-
-          <div class="item">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <br><br><br>
-                    <h2 class="section-heading">Acquisitions over the Years</h2>
-                    <br>
-                    <p>Google started slow during 2000-2004, but gradually increased the rate of acquisition. The burgeoning era of rise of startup ecosystem was 2012-2016, The same window also witnessed maximum google's acquisitions, about 40% of the total companies were acquired in this time period. </p>
-                    
-                    <br>
+                <div class="item">
                     <div class="row">
-                        <div class="col-md-7">
-                            <div class="bk-root">   
-                                <div class="bk-plotdiv" id="9e80f0c0-283c-40a9-92b5-68284624c98e"></div>
+                        <div class="col-md-10 col-md-offset-1">
+
+                            <br>
+                            <br>
+                            <br>
+                            <h2 class="section-heading">Acquisitions by the CEOs</h2>
+                            <br>
+
+                            <p>Eric Schmid was appointed as the ceo for Google for almost a decade (till 2011), Larry Page served as the CEO in 2011-2015 before the torch was passed to Sundar Pichai in late 2015, the same time when Larry moved to takecare of Google's new entitiy and their parent company: Alphabet Inc. </p>
+
+                            <br>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="bk-root">
+                                        <div class="bk-plotdiv" id="b4965aa8-f2dd-4101-b97f-0af2bcfa587a"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <p>Though Eric served longer, number of acquisitions were less (33) as compared to acquistions by his successors, Larry and Sundar (90 and 82+ respectively).</p>
+                                    <p>With 82 acquisitions in just under 2 years, Sundar is beating every other CEO in terms of rate of acquiring a company.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <p>The rate of acquiring a company in the latest time period (2016-Present) is highly acclerating and expected to beat it precursor.</p>
-                            <p>Since 2016, On an average rate of acquisition is 2 per month. More than 50% of the total acquisitions by Google are after 2010.</p>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+
+                            <br>
+                            <br>
+                            <br>
+                            <h2 class="section-heading">Acquisitions by the Category</h2>
+                            <br>
+
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="bk-root">
+                                        <div class="bk-plotdiv" id="0301d895-9a7d-4729-a8f5-bee5888d0faa"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <p>Google acquired companies across different categories such as - AI (34), Search (10), Cloud (8), Offers (9), Mobile (45), Security (6), Maps (13) and Social (10). </p>
+
+                                    <p>Maximum acquisitions are observed under Mobile category, followed by AI and Search. The focus on mobile indicates Google's strategies of competiting with Apple. The set also involes the notorious acquisition of Motorola in 2012 for a whopping $12.5 Billion. </p>
+
+                                    <p>AI (Artificial Intelligence) is another most focussed category. Companies focussing on Deep Learning, Machine Learning, NLP, Chatbots, Image Processing and Data Science were acquired by Google, indicating the importance of machine intelligence in their products.</p>
+
+                                    <p>Major AI acquisions by Google include Kaggle Inc, api.ai and Dark Blue Labs. Majority of them were acquired in 2013-2016 period.</p>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
-
                 </div>
-            </div>
-          </div>
 
 
-          <div class="item">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    
-                    <br><br><br>
-                    <h2 class="section-heading">Acquisitions by the CEOs</h2>
-                    <br>
 
-                    <p>Eric Schmid was appointed as the ceo for Google for almost a decade (till 2011), Larry Page served as the CEO in 2011-2015 before the torch was passed to Sundar Pichai in late 2015, the same time when Larry moved to takecare of Google's new entitiy and their parent company: Alphabet Inc. </p>
-
-                    <br>
+                <div class="item">
                     <div class="row">
-                        <div class="col-md-7">
-                            <div class="bk-root">   
-                                <div class="bk-plotdiv" id="b4965aa8-f2dd-4101-b97f-0af2bcfa587a"></div>
+                        <div class="col-md-10 col-md-offset-1">
+
+                            <br>
+                            <br>
+                            <br>
+                            <h2 class="section-heading">Acquisitions Amounts</h2>
+                            <br>
+                            <p>Google spent heavy amounts to enhance and improve their important verticals - Mobile, AI and Advertisments. Google's most expensive purchase was Motorola Mobility in 2012 amounting to total of $12.5 billion. A heavy profit was made by selling it to Lenovo $2.9 billion. NestLabs, a home automation company was acquired in Jan, 2014 for $3.1 Billion, refelecting the focus on AI and Internet of Things. DoubleClick, the ad technology foundation for digital advertising was acquired in $3.1 Billion as well in 2007, which is double to amount Google paid to acquire Youtube in 2006 for $1.65 Billion.</p>
+
+                            <br>
+                            <div class="bk-root">
+                                <div class="bk-plotdiv" id="e563c1fd-f64c-41c8-9f12-3afd73c34aaa"></div>
+                            </div>
+
+                            <p>Top Acquisitions after removing top four amounts </p>
+                            <div class="bk-root">
+                                <div class="bk-plotdiv" id="253b60f0-1491-4a8a-89ec-61476ee80476"></div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <p>Though Eric served longer, number of acquisitions were less (33) as compared to acquistions by his successors, Larry and Sundar (90 and 82+ respectively).</p>
-                            <p>With 82 acquisitions in just under 2 years, Sundar is beating every other CEO in terms of rate of acquiring a company.</p>
-                        </div>
                     </div>
                 </div>
-            </div>
-          </div>
 
 
-          <div class="item">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    
-                    <br><br><br>
-                    <h2 class="section-heading">Acquisitions by the Category</h2>
-                    <br>
-                    
+
+
+
+                <div class="item">
                     <div class="row">
-                        <div class="col-md-7">
-                            <div class="bk-root">   
-                                <div class="bk-plotdiv" id="0301d895-9a7d-4729-a8f5-bee5888d0faa"></div>
+                        <div class="col-md-10 col-md-offset-1">
+                            <br>
+                            <br>
+                            <br>
+                            <h2 class="section-heading">Rate of acquisitions with time</h2>
+                            <br>
+                            <p>Google started a bit slow, but gradually increased the pace of acquiring companies. The time period of January to March, 2014 witnessed a large number of acquisitions. Since 2010, the rate of acquiring a company is 1 per week on an average. Also, The gap between successive acquisitions decreased with team, initially in 2000-2014 it was on an average equal to 100 days, but recently the gap is as close as 10 days.</p>
+
+                            <br>
+                            <div class="bk-root">
+                                <div class="bk-plotdiv" id="76efb56f-6173-474f-9233-4c0ca775ba82"></div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="bk-root">
+                                <div class="bk-plotdiv" id="f05a46a1-1f77-4f1f-8c98-bc7cf33f8ede"></div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <p>Google acquired companies across different categories such as - AI (34), Search (10), Cloud (8), Offers (9), Mobile (45), Security (6), Maps (13) and Social (10). </p>
-
-                            <p>Maximum acquisitions are observed under Mobile category, followed by AI and Search. The focus on mobile indicates Google's strategies of competiting with Apple. The set also involes the notorious acquisition of Motorola in 2012 for a whopping $12.5 Billion. </p>
-
-                            <p>AI (Artificial Intelligence) is another most focussed category. Companies focussing on Deep Learning, Machine Learning, NLP, Chatbots, Image Processing and Data Science were acquired by Google, indicating the importance of machine intelligence in their products.</p>
-
-                            <p>Major AI acquisions by Google include Kaggle Inc, api.ai and Dark Blue Labs. Majority of them were acquired in 2013-2016 period.</p>
-                        </div>
-                    </div>
-                   
-
-                </div>
-            </div>
-          </div>
-
-
-
-        <div class="item">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    
-                    <br><br><br>
-                    <h2 class="section-heading">Acquisitions Amounts</h2>
-                    <br>
-                    <p>Google spent heavy amounts to enhance and improve their important verticals - Mobile, AI and Advertisments. Google's most expensive purchase was Motorola Mobility in 2012 amounting to total of $12.5 billion. A heavy profit was made by selling it to Lenovo $2.9 billion. NestLabs, a home automation company was acquired in Jan, 2014 for $3.1 Billion, refelecting the focus on AI and Internet of Things. DoubleClick, the ad technology foundation for digital advertising was acquired in $3.1 Billion as well in 2007, which is double to amount Google paid to acquire Youtube in 2006 for $1.65 Billion.</p>
-                    
-                    <br>
-                    <div class="bk-root">   
-                        <div class="bk-plotdiv" id="e563c1fd-f64c-41c8-9f12-3afd73c34aaa"></div>
-                    </div>
-
-                    <p>Top Acquisitions after removing top four amounts </p>
-                    <div class="bk-root">   
-                        <div class="bk-plotdiv" id="253b60f0-1491-4a8a-89ec-61476ee80476"></div>
                     </div>
                 </div>
-            </div>
-          </div>
 
 
 
 
-
-
-          <div class="item">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <br><br><br>
-                    <h2 class="section-heading">Rate of acquisitions with time</h2>
-                    <br>
-                    <p>Google started a bit slow, but gradually increased the pace of acquiring companies. The time period of January to March, 2014 witnessed a large number of acquisitions. Since 2010, the rate of acquiring a company is 1 per week on an average. Also, The gap between successive acquisitions decreased with team, initially in 2000-2014 it was on an average equal to 100 days, but recently the gap is as close as 10 days.</p>
-                    
-                    <br>
-                    <div class="bk-root">   
-                        <div class="bk-plotdiv" id="76efb56f-6173-474f-9233-4c0ca775ba82"></div>
-                    </div>
-                    <br><br>
-                    <div class="bk-root">   
-                        <div class="bk-plotdiv" id="f05a46a1-1f77-4f1f-8c98-bc7cf33f8ede"></div>
-                    </div>
-                </div>
-            </div>
-          </div>
-
-
-
-
-          <div class="item">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    
-                    <br><br><br>
-                    <h2 class="section-heading">Visualizing all Acquisitions (by Year, by Month, by Category, by Region, by Amount)</h2>
-                    <br>
-                    <p>The multidimensional graph below repersents of different color, size, shape and cooridnates. Every node is a company acquired by google. Year of acquisition is repersented on X-axis, Month of acquisition is presented onon Y-axis, Acquisitions cost is depecticted by the size of the node (larger the size, larger is the acquisition cost and vice verca), Shape of the nodes repersent Regions (Continents) of the companies. And, Company's categories are presented in the form of different colors. (Hover on the nodes to view details)</p>
-                    
-                    <br><br>
+                <div class="item">
                     <div class="row">
-                        <div class="col-md-9">
-                            <div class="bk-root">   
-                                <div class="bk-plotdiv" id="deb828d8-507e-40d5-ba24-600e568c450e"></div>
-                            </div> 
-                        </div>
-                        <div class="col-md-3">
-                        <p> X-axis : Year of acquisition <br>
-                        Y-axis : Month of acquisition <br>
-                        Size : Acquisition Amount</p>
-                        <p> 
-                                 <font color="#ff003b"><i class="fa fa-square" aria-hidden="true"></i> </font> Communication<br>
-                                 <font color="#ed89d7"><i class="fa fa-square" aria-hidden="true"></i> </font> Search<br>
-                                 <font color="#e0ef9e"><i class="fa fa-square" aria-hidden="true"></i> </font> Publishing<br>
-                                 <font color="#fff200"><i class="fa fa-square" aria-hidden="true"></i> </font> Maps<br>
-                                 <font color="#55f497"><i class="fa fa-square" aria-hidden="true"></i> </font> Mobile<br>
-                                 <font color="#515991"><i class="fa fa-square" aria-hidden="true"></i> </font> Misc<br>
-                                 <font color="#c76de0"><i class="fa fa-square" aria-hidden="true"></i> </font> Youtube<br>
-                                 <font color="#ea7c38"><i class="fa fa-square" aria-hidden="true"></i> </font> Security<br>
-                                 <font color="#e1ea38"><i class="fa fa-square" aria-hidden="true"></i> </font> Social<br>
-                                 <font color="#abe554"><i class="fa fa-square" aria-hidden="true"></i> </font> Offers<br>
-                                 <font color="#40e878"><i class="fa fa-square" aria-hidden="true"></i> </font> Cloud<br>
-                                 <font color="#f97000"><i class="fa fa-square" aria-hidden="true"></i> </font> AI
-                        </p>
-                        <p> 
-                            <font color="#f97000"> &#9679; </font> North America <br>
-                            <font color="#f97000"> &#9632; </font>South America <br>
-                            <font color="#f97000"> &#9650; </font> Australia <br>
-                            <font color="#f97000"> &#x25C6; </font> Asia <br>
-                            <font color="#f97000"> <b>+</b> </font> Europe
-                        </p>
+                        <div class="col-md-10 col-md-offset-1">
+
+                            <br>
+                            <br>
+                            <br>
+                            <h2 class="section-heading">Visualizing all Acquisitions (by Year, by Month, by Category, by Region, by Amount)</h2>
+                            <br>
+                            <p>The multidimensional graph below repersents of different color, size, shape and cooridnates. Every node is a company acquired by google. Year of acquisition is repersented on X-axis, Month of acquisition is presented onon Y-axis, Acquisitions cost is depecticted by the size of the node (larger the size, larger is the acquisition cost and vice verca), Shape of the nodes repersent Regions (Continents) of the companies. And, Company's categories are presented in the form of different colors. (Hover on the nodes to view details)</p>
+
+                            <br>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div class="bk-root">
+                                        <div class="bk-plotdiv" id="deb828d8-507e-40d5-ba24-600e568c450e"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <p> X-axis : Year of acquisition
+                                        <br> Y-axis : Month of acquisition
+                                        <br> Size : Acquisition Amount</p>
+                                    <p>
+                                        <font color="#ff003b"><i class="fa fa-square" aria-hidden="true"></i> </font> Communication
+                                        <br>
+                                        <font color="#ed89d7"><i class="fa fa-square" aria-hidden="true"></i> </font> Search
+                                        <br>
+                                        <font color="#e0ef9e"><i class="fa fa-square" aria-hidden="true"></i> </font> Publishing
+                                        <br>
+                                        <font color="#fff200"><i class="fa fa-square" aria-hidden="true"></i> </font> Maps
+                                        <br>
+                                        <font color="#55f497"><i class="fa fa-square" aria-hidden="true"></i> </font> Mobile
+                                        <br>
+                                        <font color="#515991"><i class="fa fa-square" aria-hidden="true"></i> </font> Misc
+                                        <br>
+                                        <font color="#c76de0"><i class="fa fa-square" aria-hidden="true"></i> </font> Youtube
+                                        <br>
+                                        <font color="#ea7c38"><i class="fa fa-square" aria-hidden="true"></i> </font> Security
+                                        <br>
+                                        <font color="#e1ea38"><i class="fa fa-square" aria-hidden="true"></i> </font> Social
+                                        <br>
+                                        <font color="#abe554"><i class="fa fa-square" aria-hidden="true"></i> </font> Offers
+                                        <br>
+                                        <font color="#40e878"><i class="fa fa-square" aria-hidden="true"></i> </font> Cloud
+                                        <br>
+                                        <font color="#f97000"><i class="fa fa-square" aria-hidden="true"></i> </font> AI
+                                    </p>
+                                    <p>
+                                        <font color="#f97000"> &#9679; </font> North America
+                                        <br>
+                                        <font color="#f97000"> &#9632; </font>South America
+                                        <br>
+                                        <font color="#f97000"> &#9650; </font> Australia
+                                        <br>
+                                        <font color="#f97000"> &#x25C6; </font> Asia
+                                        <br>
+                                        <font color="#f97000"> <b>+</b> </font> Europe
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-          </div>
 
+            <a class="left carousel-control" href="#vis_sec" data-slide="prev">
+                <font color="#222"><span class="icon-prev leftme"></span></font>
 
-
-
+            </a>
+            <a class="right carousel-control" href="#vis_sec" data-slide="next">
+                <font color="#222"><span class="icon-next"></span></font>
+            </a>
         </div>
-
-        <a class="left carousel-control" href="#vis_sec" data-slide="prev">
-          <font color="#222" ><span class="icon-prev leftme"></span></font>
-
-        </a>
-        <a class="right carousel-control" href="#vis_sec" data-slide="next">
-          <font color="#222"><span class="icon-next"></span></font>
-        </a>
-
+    </div>
 
     </div>
     </div>
-
-            </div>
-        </div>
     </div>
 
     <footer>
@@ -322,9 +345,17 @@
     <script type="text/javascript">
         Bokeh.set_log_level("info");
         $('.carousel').carousel({
-          interval: 10000 * 1000
+            interval: 10000 * 1000
         });
+
+$(".page-scroll").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#abc").offset().top
+    }, 500);
+});
+
     </script>
     <script src="js/bokeh_charts.js"></script>
 </body>
+
 </html>
